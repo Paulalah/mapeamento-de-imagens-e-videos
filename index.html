@@ -1,42 +1,65 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Página de Animes e Filmes</title>
-<style>
-  /* Estilos básicos */
-  .gallery {
-    width: 100%;
-    table-layout: fixed;
-  }
-  .gallery td {
-    width: 33%;
-  }
-  .gallery img, .gallery video {
-    width: 100%;
-    height: auto;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapeamento de Imagens e Vídeos</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+        td {
+            text-align: center;
+            vertical-align: top;
+        }
+        img, iframe {
+            width: 100%;
+            height: auto;
+            border: 2px solid white;
+        }
+        .name {
+            margin-top: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+        }
+    </style>
 </head>
 <body>
-<h1>MAPEAMENTO DE IMAGENS E VIDEOS</h1>
-
-<table class="gallery">
-  <tr>
-    <!-- Colunas de Imagens -->
-    <td><a href="Your name.jpg" target="_blank"><img src="Your name.jpg" alt="Anime 1"></a></td>
-    <td><a href="SK8.jpg" target="_blank"><img src="SK8.jpg" alt="Anime 2"></a></td>
-    <td><a href="Banana fish.jpg" target="_blank"><img src="Banana fish.jpg" alt="Anime 3"></a></td>
-  </tr>
-  <tr>
-    <!-- Colunas de Vídeos -->
-    <iframe width="400" height="250" src="https://www.youtube.com/embed/OpPSdKnkffw?si=CIZK8gv0S6FGdNIX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <iframe width="400" height="250" src="https://www.youtube.com/embed/r1XE8ON8fos?si=mtwof6-ZeAYNCE8h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <iframe width="400" height="250" src="https://www.youtube.com/embed/VekCU4YJiR8?si=RqyZxJhm8sgJi9Q2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </tr>
-</table>
-
-
+    <h1>Mapeamento de Imagens e Vídeos</h1>
+    <table>
+        <tr>
+            <td>
+                <img src="img/Op.png" alt="Imagem 1" onclick="window.open('imagem1.jpg', '_blank')">
+                <div class="name">One Piece</div>
+            </td>
+            <td>
+                <img src="img/Tr.png" alt="Imagem 2" onclick="window.open('imagem2.jpg', '_blank')">
+                <div class="name">Tokyo Revengers</div>
+            </td>
+            <td>
+                <img src="img/naruto.jpg" alt="Imagem 3" onclick="window.open('imagem3.jpg', '_blank')">
+                <div class="name">Naruto</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Oo52vQyAR6w?si=_yse9PVVpi4W10jd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/By_JYrhx-WY?si=DxyuissVF0Ri7q9p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aJRu5ltxXjc?si=2qLgNs7nSK8x1awC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
 </body>
-</html>
-
-
+</html>     
